@@ -19,12 +19,21 @@ function  getFullName(firstName='', lastName='') {
 
 let result = getFullName('ravi', 'rajpoot');
  let expected = 'ravindra rajpoot';
- 
+ result = getFullName('ravi', 'singh');
+ expected = 'ravi sing'
+
  if(result !== expected) {
      throw new Error(`${result} is not equal to ${expected}`)
  }
 
+result = getFullName('ravindra', 'singh')
+expected = "ravindra singh"
 
- result = getFullName('ravi', 'singh');
- expected = 'ravi singh'
+
+if(result !== expected) {
+    throw new Error(`${result} is not equal to ${expected}`)
+}
+
+
+
  
